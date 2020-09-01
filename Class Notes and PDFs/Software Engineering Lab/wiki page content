@@ -1,0 +1,36 @@
+[[File:Cubefrost logo.png|600px|frameless|center|cubefrost logo]]
+==Team Info==
+{| class="wikitable"
+|-
+! Sl no. !! Name !! Role
+|-
+| 01 || Subhradip Debnath || Team Lead
+|-
+| 02 || Tamojit Das || -
+|-
+| 03 || Soham Biswas || -
+|-
+| 04 || Soham Ghosh || -
+|}
+
+
+==Problem Statement==
+*Currently in order to legally register a shipment, one has to go through the trouble of manually creating and editing json files, get it digitally signed and then upload it to the appropriate server.
+*At present there is no comparable program or software on the new policy being implemented by the CUSTOMS GOI. Older softwares are CUI.
+*The new system has a lot of amendment requirements and thus has to be based on accessing previous data and amending them continuously. Forms are long and dynamic and it varies with the ship, cargo, crew and item list.
+*The Document then has to be digitally signed and has to be uploaded to the Govt. Server ICEGATE. No such provision is there to sign the document and upload in a go. Signing utility on DSC PKI for the software is to be developed.
+
+====Interviews with Stakeholders====
+[https://drive.google.com/file/d/1MTLjbr3wtbeCBJZX6P7-GLkuo1gCuulo/view?usp=sharing INTERVIEW LINK]
+
+==Solution Statement==
+*In order to add a layer of abstraction we are creating a unified desktop application and later a mobile application with an easy to use GUI interface. 
+*This application will allow a fellow sailor to comfortably perform Create, read, update and delete json forms. They will also be able to keep track of their past json forms as well.
+*Verification, digital signing and uploading to the appreciate server will also be supported.
+
+==Use Case Models==
+[[File:Use Case Diagram Cubefrost Image 1.png|frame|centre|Use Case Diagram (.png)]]
+[https://drive.google.com/file/d/1yAtNzOuSkh6SzBI5IyhHL5YACQ4Cg23-/view?usp=sharing Use Case Diagram (VPD FILE)]
+
+====Use Case Description====
+The user enters the application, authenticates himself to be a valid user. In there he has to choose from which city his branch belongs to and identify the primary port from which he would be filing the manifests. Then he moves on to file a manifest. The manifests can be amended multiple times. The manifests and the logs will be saved and can be accessed from all the computers in the local network through similar user endpoints. Ultimately when a manifest is clear for submission it is ready to digitally signed and uploaded to the Government of India's CUSTOMS Server. Also the manifests can be exported into EXCEL SHEETS and TEXTS as per users choice.
